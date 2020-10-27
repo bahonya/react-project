@@ -1,0 +1,32 @@
+.post{
+    display: grid;
+    grid-template-areas: 
+    "number upvote img item"
+    "number downvote img item";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50px 50px 1fr 1fr;
+}
+.item{
+    grid-area: item;
+    color: chocolate;
+}
+.avatar{
+    grid-area: img;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.number{
+    grid-area: number;
+    text-align: left;
+}
+.upvote{
+    grid-area: upvote;
+    width: 20px;
+    height: 20px;
+}
+.downvote{
+    grid-area: downvote;
+    width: 20px;
+    height: 20px;
+}
