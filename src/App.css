@@ -1,0 +1,10 @@
+.app-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-areas: 
+  "h h h"
+  "n c m";
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 2fr 10fr 2fr;
+}
