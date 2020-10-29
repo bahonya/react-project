@@ -5,3 +5,9 @@
   .item{
     color: blueviolet;
   }  
+  .item a{
+    color: crimson;
+  }
+  .item a.activeLink{
+    color: darkgoldenrod;
+  }

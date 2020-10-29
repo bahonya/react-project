@@ -2,16 +2,25 @@ import './App.css';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Profile from './components/Profile/Profile'
-import Messages from './components/Messages/Messages'
+import Dialogs from './components/Dialogs/Dialogs'
+import Settings from './components/Settings/Settings'
+import Feed from './components/Feed/Feed'
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='app-wrapper'>
-      <Header />
-      <Navbar />
-      <Profile />
-      <Messages />
-    </div>
+    <BrowserRouter>
+      <div className='app-wrapper'>
+        <Header />
+        <Navbar />
+        <div className='app-wrapper-content' >
+          <Route path='/dialogs' component={Dialogs} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/feed' component={Feed} />
+          <Route path='/settings' component={Settings} />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
